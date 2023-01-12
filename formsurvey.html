@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ .a1 ,.i1 {
+    width: 500px;
+    height: 20px;
+ }
+label{
+    font-weight: 700;
+}
+ #other2{
+   margin-left: 25px;
+ }
+ 
+ .dollar { 
+   font-size: 10px;
+   margin-left: 10px;
+
+ }
+ .cents{
+    font-size: 10px;
+    margin-left: 70px;
+
+ }
+ td{
+    text-align: center;
+     }
+ table, form{
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+            
+     }
+ table, th, td {
+border: 1px solid rgb(196, 187, 187);
+border-collapse: collapse;
+height: 50px;
+ }
+ th {    
+background-color: rgb(145, 134, 134);
+color: black;
+
+    }
+
+ tr:nth-child(odd) {
+        background-color: #dddddd;
+    }
+.i1a, .i2, .i3, .i4, .i5 {
+    width: 150px;
+}
+
+ </style>
+<body>
+    <form method="get" action="">
+    <div>
+    <h2>Market Research Survey</h2>
+    <p>Please take a few moments to complete this satisfaction survey</p>
+    </div>
+    <hr>
+    <br>
+    <div>
+    <label for="" class="age" id="age1"> What is your age range?</label> <br>
+    <select name="age" id="age" class="a1" > 
+    <option value="age1">18-24</option>
+    <option value="age2">25-40</option>
+    <option value="age3">41-65</option>
+    </select> 
+    </div>
+    <br>
+    <div>
+    <label for="" class="incom" id="income1"> What is your yearly income range?</label> <br>
+    <select name="income" id="income" class="i1"> 
+    <option value="age1">$0-$25000</option>
+    <option value="age2">$25000-$65000</option>
+    <option value="age3">Over $65000</option>
+    </select>
+    </div>
+    <br>
+     <div>
+    <label> Gender Indentity?</label> <br>
+    <input type="radio" name="gender" id="Male1"> Male <br>
+    <input type="radio" name="gender" id="Female1"> Female <br>
+    <input type="radio" name="gender" id="Non1"> Nonbinary <br>
+    <input type="radio" name="gender" id="Other1"> Other <br>
+    <input type="text" name="" id="other2"> <br>
+    </div>
+    <br>
+    <div>
+    <label> Which of the following products have you purchased in the last 2 months. Please check all that apply.</label>
+    <br>
+    <input type="checkbox" name="checkprd1" id="prd1"> Product 1 <br>
+    <input type="checkbox" name="checkprd2" id="prd2"> Product 2 <br>
+    <input type="checkbox" name="checkprd3" id="prd3"> Product 3 <br>
+    </div>
+    <br>
+    <div>
+    <label> How often would you use our new product?</label> <br>
+    <input type="radio" name="oft" id="daily1" value="daily"> Daily <br>
+    <input type="radio" name="oft" id="weekly1" value="weekly"> Weekly <br>
+    <input type="radio" name="oft" id="monthly1" value=""> Monthly 
+    </div>
+    <br>
+    <div>
+    <label for="" class="pay" id="pay1"> What would you pay for the new product?</label> <br>
+     $ <input type = "text" name="Dollars" size="8"/> .
+    <input type="text" name="cent" size="2">
+    <br>
+    <span class="dollar"> Dollars</span>
+    <span class="cents"> Cents</span>
+    </div> 
+    <br>
+    <div>
+        <label for="" class="features" id="ft">What features would you like to see in the new product?</label> <br>
+        <textarea name="contentft" id="cntft" cols="100" rows="10"></textarea>
+    </div>
+    <br>
+    <div>
+    <p>Please rate your level of agreement with following statements</p>
+
+
+    <table border="1">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Strongly disagree</th>
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strongly agree</th>            
+          </tr>
+          <tr>
+            <td> Our products are priced fairly</td><!-- làm sao để chọn đc 1 option trong 4 option -->
+            <td>
+                <input type="radio" class="i1a" name="i">   
+                <p class="p1">1</p>              
+            </td>           
+            <td>
+                <input type="radio" class="i2" name="i"> 
+                <p class="p2">2</p>              
+            </td>         
+            <td>
+                <input type="radio" class="i3" name="i">
+                <p class="p3">3</p>  
+            </td>
+            <td>
+                <input type="radio" class="i4" name="i">
+                <p class="p4">4</p>  
+            </td>
+          </tr>
+          <td> Our products are high quality</td><!-- làm sao để chọn đc 1 option trong 4 option -->
+            <td>
+                <input type="radio" class="i1a" name="i"> 
+                <p class="p1">1</p>                
+            </td>           
+            <td>
+                <input type="radio" class="i2" name="i">
+                <p class="p2">2</p>  
+            </td>         
+            <td>
+                <input type="radio" class="i3" name="i">
+                <p class="p3">3</p> 
+            </td>
+            <td>
+                <input type="radio" class="i4" name="i">
+                <p class="p4">4</p> 
+          
+          <tr>
+            <td> You would recommend our product to a friend or coworker</td><!-- làm sao để chọn đc 1 option trong 4 option -->
+            <td>
+                <input type="radio" class="i1a" name="i">  
+                <p class="p1">1</p>                 
+            </td>           
+            <td>
+                <input type="radio" class="i2" name="i"> 
+                <p class="p2">2</p> 
+            </td>         
+            <td>
+                <input type="radio" class="i3" name="i"> 
+                <p class="p3">3</p>
+            </td>
+            <td>
+                <input type="radio" class="i4" name="i"> 
+                <p class="p4">4</p> 
+            </td>
+          </tr>
+        </thead>
+    </table>
+       
+     </div>
+    
+</form>
+</body>
+</html>
